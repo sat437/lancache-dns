@@ -9,7 +9,7 @@ COPY overlay/ /
 RUN	mkdir -p /var/cache/bind /var/log/named		\
 	&& chown bind:bind /var/cache/bind /var/log/named
 
-RUN git clone --depth=1 --no-single-branch https://github.com/uklans/cache-domains/ /opt/cache-domains
+RUN git clone --depth=1 --no-single-branch https://github.com/sat437/cache-domains-with-linux /opt/cache-domains
 
 EXPOSE 53/udp
 EXPOSE 53/tcp
